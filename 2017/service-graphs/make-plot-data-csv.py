@@ -183,8 +183,8 @@ for team in sorted(by_team):
 
     #print(plot_list)
     plot_list.append(all_services_plot)
-    print(len(plot_list))
-    show(gridplot(plot_list, ncols=1))
+    #print(len(plot_list))
+    save(gridplot(plot_list, ncols=1, merge_tools=False))
     reset_output()
 
 
